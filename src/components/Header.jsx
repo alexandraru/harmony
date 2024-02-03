@@ -12,14 +12,14 @@ function Header (props){
                             {props.text.map((el, index) => (
                             <ul className='navigation-box-items d-flex no-li-style align-c' key={index}><li><Link className="menu decor" to="/author" onClick={()=> scroller.scrollTo("author", {
                                 duration: 500,
-                                smooth: true, offset: 50})}>{el.menuAuthor}</Link></li>
+                                smooth: true,})}>{el.menuAuthor}</Link></li>
                             <li><Link className="menu decor" to='/course' onClick={()=> scroller.scrollTo("course", {
                                 duration: 500,
-                                smooth: true, offset: 50})}>{el.menuCourse}</Link></li>
+                                smooth: true,})}>{el.menuCourse}</Link></li>
                             <li><Link className="menu decor" to="/subscribe">{el.menuSubscribe}</Link></li>
                             <li><Link className="menu decor" to="/contacts" onClick={()=> scroller.scrollTo("contacts", {
                                 duration: 500,
-                                smooth: true, offset: 50})}>{el.menuContacts}</Link></li>
+                                smooth: true,})}>{el.menuContacts}</Link></li>
                             <li><Link className="menu decor" to="/challenge">{el.menuFreePart}</Link></li>
                             <li><Link className="menu decor" to="/feedback">{el.menuFeedback}</Link></li></ul>))}
                             <p className='navigation-lang' onClick={props.onChange}>{props.language}</p>
