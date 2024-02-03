@@ -1,6 +1,9 @@
 .container{
 
     .carousel{
+        .feedback{
+            min-width: 400px;
+        }
         .carousel-indicators{
             button{
                 width: 20px;

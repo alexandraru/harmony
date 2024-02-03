@@ -20,7 +20,7 @@ function Author (props){
                 </div>
             <h2 className="author-title">{el.authorTitle}</h2>
             <Element name="author" className="container d-flex align-c justify-sb">
-                <img src="/img/author.jpg" alt="author" className="author-photo"/>
+                <img src="img/author.jpg" alt="author" className="author-photo"/>
                 <div className='author-about'>
                     <h3 className="author-name">{el.authorName}</h3>
                     <h4 className="author-manager">{el.authorManager}</h4>

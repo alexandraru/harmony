@@ -7,7 +7,7 @@ function Header (props){
     return (
         <header>
                 <nav className="navigation d-flex align-c justify-sb">
-                    <img src="/img/logo.png" alt="logo" className="logo"/>
+                    <img src="img/logo.png" alt="logo" className="logo"/>
                     <div className='navigation-box d-flex no-li-style align-c'>
                             {props.text.map((el, index) => (
                             <ul className='navigation-box-items d-flex no-li-style align-c' key={index}><li><Link className="menu decor" to="/author" onClick={()=> scroller.scrollTo("author", {

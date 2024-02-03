@@ -6,10 +6,10 @@ function Feedback (){
         <div className="container">
           <Carousel>
           <Carousel.Item interval={2000}>
-            <img className='feedback' src='/img/feedback1.jpg' alt="feedback photo"/>
+            <img className='feedback' src='img/feedback1.jpg' alt="feedback photo"/>
           </Carousel.Item>
           <Carousel.Item interval={2000}>
-          <img className='feedback' src='/img/feedback2.jpg' alt="feedback photo"/>
+          <img className='feedback' src='img/feedback2.jpg' alt="feedback photo"/>
           </Carousel.Item>
                 </Carousel>
         </div>

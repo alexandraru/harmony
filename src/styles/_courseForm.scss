@@ -39,7 +39,7 @@ $border: 2px solid rgb(119, 197, 241);
             display: block;
             transform: perspective(600px) rotateY(180deg);
             border: $border;
-            background: lighten($background, 15%);
+            background: $background;
             font-size: 25px;
             padding: 8px;
           }
