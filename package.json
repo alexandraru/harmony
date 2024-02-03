@@ -1,5 +1,5 @@
 {
-  "homepage": "https://alexandraru/alexandraru.github.io",
+  "homepage": "https://alexandraru.github.io/harmony",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,6 @@
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "emailjs": "^4.0.3",
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-content-loader": "^6.2.1",
@@ -53,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
