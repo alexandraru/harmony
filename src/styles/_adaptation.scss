@@ -1,0 +1,170 @@
+
+/* *Large: 992px-1199px */
+@media(max-width: 1199px){
+    .container{
+        max-width: 960px;
+    }
+} 
+/* *Medium: 768px-991px */
+@media(max-width: 991px){
+    .container{
+        max-width: 720px;
+        flex-direction: column;
+        .feedback{
+            width: 600px !important;
+        }
+        .author-name, .author-manager{
+            text-align: center;
+        }
+        .author-photo{
+            margin-bottom: $distance;
+            cursor: none;
+            &:hover{
+                transform: none !important;
+            }
+        }
+        .author-about{
+            width: 100% !important;
+        }
+        .course-offer-box{
+            flex-direction: column;
+
+            .course-offer-text{
+                width: 100% !important;
+            }
+    }
+        .course-form-box{
+            grid-template-columns: repeat(2, 300px) !important;
+            }
+        .course-price-info{
+            font-size: 25px;
+        }
+
+}
+.navigation-box-items{
+    flex-wrap: wrap;
+   }
+}
+
+/* *Small: 576px-767px */
+@media(max-width: 767px){
+    .container{
+        max-width: 540px;
+
+        .feedback{
+            width: 400px !important;
+        }
+        .sub-form-item{
+            flex-direction: column;
+            input{
+                width: 350px !important;
+                &::placeholder{
+                    padding-left: 15% !important;
+            }
+            }
+        }
+
+        .video-box-video{
+            width: 400px !important;
+            height: 400px !important;
+        }
+
+        .course-price-info{
+           flex-direction: column;
+           gap: 15px;
+           .course-price-option{
+            width: 60%;
+           }
+        }
+
+        .course-form-box{
+            grid-template-columns: repeat(2, 280px) !important;
+            }
+        .course-advantages-button{
+            margin-left: 50px;
+            display: block;
+            }
+            .title-box { 
+                .button{
+                    position: absolute;
+                    left: 50px !important;
+                    .title-button{
+                        margin-bottom: 8px !important;
+                        width: 250px !important;
+                        font-size: 18px;
+                    }
+            }}
+            .course-offer-box{
+                .course-offer-pictures{
+                    grid-template-columns: repeat(2, 150px) !important;
+                    grid-template-rows: repeat(2, 150px) !important;
+                    .course-offer-item{
+                        width: 150px !important;
+                        height: 150px !important;}
+                }
+            }
+            .course-form-box{
+                grid-template-columns: repeat(1, 280px) !important;
+                }
+
+            .item2{
+                gap: 80px !important;
+            }
+
+    }
+  .navigation { 
+    flex-direction: column;
+   
+    .menu{
+       padding-right: 10px;
+       display: block;
+       white-space: nowrap;
+       padding-top: 10px;
+    }}
+
+} 
+
+/* *Extra small: 0px (320px)-575px */
+@media(max-width: 575px){
+    .container{
+        max-width: 320px;
+        font-size: 25px;
+        .feedback{
+            width: 250px !important;
+        }
+        .sub-form-item{
+            input{
+            width: 250px !important;
+            &::placeholder{
+                padding-left: 10% !important;}
+        }
+        }
+        .video-box-video{
+            width: 250px !important;
+            height: 250px !important;
+        }
+        h2, h1{
+            font-size: 28px !important;
+        }
+        .author-photo{
+            width: 200px;
+        }
+       
+            .course-price-info{
+                .course-price-option{
+                 width: 100%;
+                }
+             }
+    }
+    .navigation {
+       padding-left: 15px !important;
+       flex-direction: row;
+       .navigation-lang{
+        top: 50px;
+    }
+       .navigation-box-items{
+        flex-wrap: wrap;
+       }
+
+    }
+} 

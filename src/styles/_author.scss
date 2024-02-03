@@ -1,0 +1,38 @@
+.author{
+    .container{
+        .title-box{
+         padding-bottom: calc($margin / 2);
+     
+         .button{
+             position: absolute;
+             right: 120px;
+         }
+         }
+     }
+    .author-title{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .container{
+        .author-photo{
+            width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 2s;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.25);
+            }
+        }
+        .author-about{
+            width: 50%;
+            .author-manager{
+                color: darken($color, 15%);
+            }
+            .author-name{
+                text-transform: uppercase;
+            }
+    
+        }
+    }
+}

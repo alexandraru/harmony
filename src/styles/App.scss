@@ -1,0 +1,83 @@
+$size: 1440px;
+$font: 'Cormorant Infant', serif;
+$background: #135fecec;
+$fontSize: 30px;
+$color: #f5ecec;
+$distance: 40px;
+
+@import '~bootstrap/scss/bootstrap';
+@import 'header';
+@import 'author';
+@import 'courseOffer'; 
+@import 'courseAdvantages';
+@import 'courseForm';
+@import 'coursePrice';
+@import 'footer';
+@import 'feedback';
+@import 'subscription';
+@import '_adaptation';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,700;1,500&display=swap');
+
+
+body{
+    font-size: $fontSize;
+    font-family: $font;
+    background-color: lighten($background, 15%) ;
+    color: $color;
+    position: relative;
+
+    .logo{
+        width: 60px;
+    }
+
+    .container{
+    width: calc($size/1.2);
+    margin: $margin auto;
+
+    .course-about-text{
+            padding-bottom: calc($margin / 2);
+        }
+    
+    h2, h1{
+        text-align: center;
+        margin-top: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: $margin;
+    }
+
+    Button{
+        transition: all 1s;
+        font-size: 20px;
+        &:hover{
+         padding-left: 20px;
+        }
+    }
+
+    .video-box-video{
+        margin-top: $distance;
+        margin-bottom: $distance;
+    }
+      
+}
+    .d-flex{
+        display: flex;
+    }
+
+    .no-li-style{
+        list-style: none;
+    }
+
+    .align-c{
+        align-items: center;
+    }
+
+    .justify-sb{
+        justify-content: space-between;
+    }
+    .decor{
+        text-decoration: none;
+    }
+
+
+}

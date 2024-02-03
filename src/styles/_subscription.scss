@@ -1,0 +1,32 @@
+.container{
+    form{
+       flex-direction: column;
+      .sub-form-item {
+        gap: 15px;
+        margin-bottom: $distance;
+        input{
+        border-radius: 8px;
+        border-color: blue;
+        width: 600px;
+        &::placeholder{
+            color: lightblue;
+            font-size: 25px;
+            padding-left: 30%;
+        }
+       }
+    }
+    .item2{
+        gap: 125px;
+    }
+    .sub-form-text{
+        font-size: 24px;
+        margin-bottom: $distance;
+    }
+       .sub-button{
+        width: 200px;
+        border-radius: 8px;
+        background-color: $background;
+        color: $color;
+       }
+    }
+}
