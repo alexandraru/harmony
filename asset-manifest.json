@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/harmony/static/css/main.db5190ef.css",
+    "main.css": "/harmony/static/css/main.aa0e71bb.css",
     "main.js": "/harmony/static/js/main.9ae3a37d.js",
     "reactPlayerYouTube.js": "/harmony/static/js/reactPlayerYouTube.bacca352.chunk.js",
     "reactPlayerSoundCloud.js": "/harmony/static/js/reactPlayerSoundCloud.719905d2.chunk.js",
@@ -17,7 +17,7 @@
     "reactPlayerPreview.js": "/harmony/static/js/reactPlayerPreview.7aecb89a.chunk.js",
     "static/media/background.jpg": "/harmony/static/media/background.daf28242da5a3850476b.jpg",
     "index.html": "/harmony/index.html",
-    "main.db5190ef.css.map": "/harmony/static/css/main.db5190ef.css.map",
+    "main.aa0e71bb.css.map": "/harmony/static/css/main.aa0e71bb.css.map",
     "main.9ae3a37d.js.map": "/harmony/static/js/main.9ae3a37d.js.map",
     "reactPlayerYouTube.bacca352.chunk.js.map": "/harmony/static/js/reactPlayerYouTube.bacca352.chunk.js.map",
     "reactPlayerSoundCloud.719905d2.chunk.js.map": "/harmony/static/js/reactPlayerSoundCloud.719905d2.chunk.js.map",
@@ -34,7 +34,7 @@
     "reactPlayerPreview.7aecb89a.chunk.js.map": "/harmony/static/js/reactPlayerPreview.7aecb89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db5190ef.css",
+    "static/css/main.aa0e71bb.css",
     "static/js/main.9ae3a37d.js"
   ]
 }
