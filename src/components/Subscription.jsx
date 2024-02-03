@@ -30,14 +30,14 @@ function Subscription (props){
             <input  id='name' {...register('name', { required: true })}/>
         </div>
         <div style={{height: 20, marginBottom: 40, color: "red", textAlign: "center"}}>
-        {errors.name && <p>Error!</p>}
+        {errors.name && <p>{el.error}</p>}
         </div>
         <div className='sub-form-item item2 d-flex'>
             <label htmlFor='email'>{el.subscribeEmail}:</label>
             <input type='email' {...register('email', { required: true })} placeholder='harmony@gmail.com' id='email'/>
         </div>
         <div style={{height: 20, marginBottom: 40, color: "red", textAlign: "center"}}>
-        {errors.email && <p>Error!</p>}
+        {errors.email && <p>{el.error}</p>}
         </div>
         <div>
             <input type='radio' id='courseSub' defaultChecked/>

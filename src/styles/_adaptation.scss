@@ -3,6 +3,13 @@
 @media(max-width: 1199px){
     .container{
         max-width: 960px;
+        .course-offer-box{
+            flex-direction: column;
+
+            .course-offer-text{
+                width: 100% !important;
+            }
+    }
     }
 } 
 /* *Medium: 768px-991px */
@@ -26,13 +33,6 @@
         .author-about{
             width: 100% !important;
         }
-        .course-offer-box{
-            flex-direction: column;
-
-            .course-offer-text{
-                width: 100% !important;
-            }
-    }
         .course-form-box{
             grid-template-columns: repeat(2, 300px) !important;
             }

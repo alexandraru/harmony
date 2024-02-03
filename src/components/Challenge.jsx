@@ -9,7 +9,7 @@ function Challenge (props){
             <div className="video-box">
                 <h2 className="video-box-title">День 1</h2>
                 <p className="video-box-text">{el.challenge1}</p>
-                <ReactPlayer className="video-box-video" url={"https://youtu.be/d_sjvK831cA?si=r0YNwVwveDULvZ6o"} controls/>
+                <ReactPlayer className="video-box-video" style={{border: "1px solid rgb(11, 11, 112)"}} url={"https://youtu.be/d_sjvK831cA?si=r0YNwVwveDULvZ6o"} controls/>
             </div>
             <div className="video-box">
                 <h2 className="video-box-title">День 2</h2>
