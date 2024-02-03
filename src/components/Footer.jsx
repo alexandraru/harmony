@@ -7,12 +7,12 @@ function Footer (props){
     return (
         <footer>
             <Element name="contacts" id='contacts' className="container">
-                {props.text.map((el, index) => (<p key={index} className="contacts">{el.footer}<a href='https://www.instagram.com/studying_harmony/'>@studying_harmony</a></p>))}
+                {props.text.map((el, index) => (<p key={index} className="contacts">{el.footer}<a target='_blank' href='https://www.instagram.com/studying_harmony/'>@studying_harmony</a></p>))}
                 <div className="icons">
-                <a className='decor' href="https://www.instagram.com/studying_harmony/">
+                <a className='decor' target='_blank' href="https://www.instagram.com/studying_harmony/">
                     <FaInstagram />
                 </a>
-                <a className='decor' href="https://www.youtube.com/channel/UCvX1qCmQPKypj8OKUNmMDvA/featured">
+                <a className='decor' target='_blank' href="https://www.youtube.com/channel/UCvX1qCmQPKypj8OKUNmMDvA/featured">
                     <FaYoutube />
                 </a>
                 </div>
