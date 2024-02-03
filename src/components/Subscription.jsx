@@ -40,7 +40,7 @@ function Subscription (props){
         {errors.email && <p>{el.error}</p>}
         </div>
         <div>
-            <input type='radio' id='courseSub' defaultChecked/>
+            <input type='checkbox' id='courseSub' defaultChecked/>
             <label className='sub-form-text' htmlFor='courseSub'>{el.subscribeCourse}</label>
         </div>
         <input type='submit' disabled={!isValid} className='sub-button' variant="primary" size="lg" value={el.subscribeBut}/>
