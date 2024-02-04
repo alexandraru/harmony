@@ -5,11 +5,11 @@ function Feedback (){
     return (
         <div className="container">
           <Carousel>
-          <Carousel.Item interval={2000}>
-            <img className='feedback className="d-block w-100"' src='img/feedback1.jpg' alt="feedback photo"/>
+          <Carousel.Item interval={2000} className='feedback'>
+            <img className='img-thumbnail img-fluid center-block d-block w-100' src='img/feedback1.jpg' alt="feedback photo"/>
           </Carousel.Item>
-          <Carousel.Item interval={2000}>
-          <img className='feedback className="d-block w-100"' src='img/feedback2.jpg' alt="feedback photo"/>
+          <Carousel.Item interval={2000} className='feedback'>
+          <img className='img-thumbnail img-fluid center-block d-block w-100"' src='img/feedback2.jpg' alt="feedback photo"/>
           </Carousel.Item>
                 </Carousel>
         </div>
