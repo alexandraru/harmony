@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import sendMessage from "../api/telegram.ts"
+import sendMessage from "../api/telegram.ts";
+import { toast, Zoom } from 'react-toastify';
 
 
 
@@ -17,6 +18,17 @@ function Subscription (props){
       const onSubmit = (data) => {
         sendMessage(JSON.stringify(data));
         reset()
+        toast.success('Готово!', {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Zoom,
+          });
       }
 
     return (
@@ -29,14 +41,14 @@ function Subscription (props){
             <label htmlFor='name'>{el.subscribeName}:</label>
             <input  id='name' {...register('name', { required: true })}/>
         </div>
-        <div style={{height: 20, marginBottom: 40, color: "red", textAlign: "start"}}>
+        <div style={{height: 20, marginBottom: 40, color: "red", paddingLeft: "29%"}}>
         {errors.name && <p>{el.error}</p>}
         </div>
         <div className='sub-form-item item2 d-flex'>
             <label htmlFor='email'>{el.subscribeEmail}:</label>
             <input type='email' {...register('email', { required: true })} placeholder='harmony@gmail.com' id='email'/>
         </div>
-        <div style={{height: 20, marginBottom: 40, color: "red", textAlign: "start"}}>
+        <div style={{height: 10, marginBottom: 40, color: "red", paddingLeft: "29%"}}>
         {errors.email && <p>{el.error}</p>}
         </div>
         <div>
