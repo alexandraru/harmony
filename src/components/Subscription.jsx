@@ -41,14 +41,14 @@ function Subscription (props){
             <label htmlFor='name'>{el.subscribeName}:</label>
             <input  id='name' {...register('name', { required: true })}/>
         </div>
-        <div style={{height: 20, marginBottom: 40, color: "red", paddingLeft: "29%"}}>
+        <div className='sub-form-error' style={{height: 20, marginBottom: 40, color: "red", paddingLeft: "29%"}}>
         {errors.name && <p>{el.error}</p>}
         </div>
         <div className='sub-form-item item2 d-flex'>
             <label htmlFor='email'>{el.subscribeEmail}:</label>
             <input type='email' {...register('email', { required: true })} placeholder='harmony@gmail.com' id='email'/>
         </div>
-        <div style={{height: 10, marginBottom: 40, color: "red", paddingLeft: "29%"}}>
+        <div className='sub-form-error' style={{height: 10, marginBottom: 40, color: "red", paddingLeft: "29%"}}>
         {errors.email && <p>{el.error}</p>}
         </div>
         <div>

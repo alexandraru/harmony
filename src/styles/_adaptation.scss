@@ -39,6 +39,9 @@
         .course-price-info{
             font-size: 25px;
         }
+        .sub-form-error{
+            padding-left: 50% !important;
+        }
 
 }
 .navigation-box-items{
@@ -58,10 +61,10 @@
             flex-direction: column;
             input{
                 width: 350px !important;
-                &::placeholder{
-                    padding-left: 15% !important;
             }
-            }
+        }
+        .sub-form-error{
+            padding-left: 5px !important;
         }
 
         .video-box-video{
@@ -136,8 +139,6 @@
         .sub-form-item{
             input{
             width: 250px !important;
-            &::placeholder{
-                padding-left: 10% !important;}
         }
         }
         .video-box-video{
