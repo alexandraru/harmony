@@ -1,13 +1,15 @@
 .container{
 
     .carousel{
-        .feedback{
-            min-width: 400px;
-        }
+        .carousel-inner{ 
+            .feedback{
+          img{
+            min-width: 600px;
+            min-height: 600px;}
+        }}
         .carousel-indicators{
             button{
                 width: 20px;
-                height: 20px;
                 border-radius: 50%;
                 background: gray;
             }
