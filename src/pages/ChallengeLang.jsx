@@ -1,13 +1,13 @@
 import React from 'react';
 import Challenge from '../components/Challenge';
+import { useSelector } from 'react-redux';
+import { selectorText } from '../store/selector';
 
-function ChallengeLang (props){
-    return (
-        <>
-      {(props.language === "ru") && <Challenge text={props.russianLang} language={props.language} onChange={props.onChange}/>}
-      {(props.language === "ua") && <Challenge text={props.ukrainianLang} language={props.language} onChange={props.onChange}/>}
-        </>
-    )
-}
+function ChallengeLang (){
+  const text = useSelector(selectorText)
+  return (
+  <>
+          <Challenge {...text}/>
+  </>)}
 
 export default ChallengeLang

@@ -5,18 +5,17 @@ import {Link} from 'react-router-dom';
 function CourseAdvantages (props){
     return (
         <section className="course-advantages">
-        {props.text.map((el, index) => (
-        <div key={index} className="container">
-        <h2 className="course-advantages-title">{el.courseAdvantagesTitle}</h2>
+        <div className="container">
+        <h2 className="course-advantages-title">{props.courseAdvantagesTitle}</h2>
                 <ul className="course-advantages-text no-li-style">
-                   {el.courseAdvantagesList.map((item, index) => (
+                   {props.courseAdvantagesList?.map((item, index) => (
                    <div key={index} className="course-advantages-item d-flex ">
                         <span className='course-advantages-item-digit d-flex'>{++index}</span>
                         <li className="course-advantages-item-text d-flex"> {item}</li>
                    </div>))}
                 </ul>
-                <Link className='decor' to="/subscribe"><Button className='course-advantages-button' variant="info">{el.courseAdvantagesButton}</Button>{' '}</Link>
-            </div>))}
+                <Link className='decor' to="/subscribe"><Button className='course-advantages-button' variant="info">{props.courseAdvantagesButton}</Button>{' '}</Link>
+            </div>
     </section>
     )
 }

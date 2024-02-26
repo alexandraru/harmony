@@ -1,41 +1,36 @@
 import React from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {fetchLanguageUa, fetchLanguageRu} from './store/HarmonySlice'
 import BackToTopButton from './components/BackToTopButton';
 import Feedback from './components/Feedback';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import './styles/App.scss';
-import axios from "axios";
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ChallengeLang from './pages/ChallengeLang';
-import SubscriptionLang from './pages/SubscriptionLang';
-
-
+import Subscription from './components/Subscription';
 
 function App() {
-  const [russianLang, setRussianLang] = useState([]);
-  const [ukrainianLang, setUkrainianLang] = useState([]);
-  const [language, setLanguage] = useState("ru");
-  const changeLang = () => {language === "ru" ? setLanguage("ua") : setLanguage("ru")};
+  const {error} = useSelector(state => state.info);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-   try {
-    axios.get("https://65b822dc46324d531d55fea5.mockapi.io/russian").then((res) => setRussianLang(res.data));
-    axios.get("https://65b822dc46324d531d55fea5.mockapi.io/ukrainian").then((res) => setUkrainianLang(res.data));
-  } catch(err){
-    alert("Упссс....")
-  }
-  }, [])
+  dispatch(fetchLanguageRu());
+  dispatch(fetchLanguageUa());
+  }, [dispatch])
+  
   return (
     <>
+      {error && <h2>An error occured: {error}</h2>}
       <Routes>
-        <Route path='/' element={<Layout russianLang={russianLang} ukrainianLang={ukrainianLang} language={language} onChange={changeLang}/>}>
-        <Route index element={<Home russianLang={russianLang} ukrainianLang={ukrainianLang} language={language}/>}/>
-        <Route path='author' element={<Home russianLang={russianLang} ukrainianLang={ukrainianLang} language={language}/>}/>
-        <Route path='course' element={<Home russianLang={russianLang} ukrainianLang={ukrainianLang} language={language}/>}/>
-        <Route path='contacts' element={<Home russianLang={russianLang} ukrainianLang={ukrainianLang} language={language}/>}/>
-        <Route path='challenge' element={<ChallengeLang russianLang={russianLang} ukrainianLang={ukrainianLang} language={language}/>}/>
-        <Route path='subscribe' element={<SubscriptionLang russianLang={russianLang} ukrainianLang={ukrainianLang} language={language}/>}/>
+        <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>}/>
+        <Route path='author' element={<Home/>}/>
+        <Route path='course' element={<Home/>}/>
+        <Route path='contacts' element={<Home/>}/>
+        <Route path='challenge' element={<ChallengeLang/>}/>
+        <Route path='subscribe' element={<Subscription/>}/>
         <Route path='feedback' element={<Feedback/>}/>
         </Route>
       </Routes>

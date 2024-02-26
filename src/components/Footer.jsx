@@ -3,11 +3,11 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { Element} from 'react-scroll';
 
-function Footer (props){
+function Footer ({footer}){
     return (
         <footer>
             <Element name="contacts" id='contacts' className="container">
-                {props.text.map((el, index) => (<p key={index} className="contacts">{el.footer}<a target='_blank' href='https://www.instagram.com/studying_harmony/'>@studying_harmony</a></p>))}
+               <p className="contacts">{footer}<a target='_blank' href='https://www.instagram.com/studying_harmony/'>@studying_harmony</a></p>
                 <div className="icons">
                 <a className='decor' target='_blank' href="https://www.instagram.com/studying_harmony/">
                     <FaInstagram />

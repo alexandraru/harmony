@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
 
-function Challenge (props){
+function Challenge ({challenge1, challenge2, challenge3}){
     return (
         <>
-          {props.text.map((el, index) => (
-          <div key={index} className="container">
+          <div className="container">
             <div className="video-box">
                 <h2 className="video-box-title">День 1</h2>
-                <p className="video-box-text">{el.challenge1}</p>
+                <p className="video-box-text">{challenge1}</p>
                 <ReactPlayer className="video-box-video" style={{border: "1px solid rgb(11, 11, 112)"}} url={"https://youtu.be/d_sjvK831cA?si=r0YNwVwveDULvZ6o"} controls/>
             </div>
             <div className="video-box">
@@ -17,7 +16,7 @@ function Challenge (props){
             </div>
             <div className="video-box">
                 <h2 className="video-box-title">День 3</h2>
-                <p className="video-box-text">{el.challenge2}</p>
+                <p className="video-box-text">{challenge2}</p>
                 <ReactPlayer className="video-box-video" style={{border: "1px solid rgb(11, 11, 112)"}} url={"https://youtu.be/JuTXFzHK1bc?si=bMZdcVyhRqPZLPLN"} controls/>
                 <ReactPlayer className="video-box-video" style={{border: "1px solid rgb(11, 11, 112)"}} url={"https://youtu.be/awEUHXCkI9M?si=DGqZmP_0zuVBFJrM"} controls/>
             </div>
@@ -27,11 +26,11 @@ function Challenge (props){
             </div>
             <div className="video-box">
                 <h2 className="video-box-title">День 5</h2>
-                <p className="video-box-text">{el.challenge3}</p>
+                <p className="video-box-text">{challenge3}</p>
                 <ReactPlayer className="video-box-video" style={{border: "1px solid rgb(11, 11, 112)"}} url={"https://youtu.be/hI3g19hmjqA?si=K_FWgSHbCe3i3hh1"} controls/>
             </div>
         
-        </div> ))}
+        </div>
     </>
     )
 }
