@@ -5,8 +5,15 @@ header{
         background-color: $background;
         margin-bottom: $margin;
         padding: 20px 120px;
+        .resp{
+            display: none
+        }
        .navigation-box{  
         gap: 15px;
+      .navigation-box-items{  
+        .head-menu-close{
+            display: none;
+        }}
         .navigation-lang{
             font-size: calc($fontSize/1.2);
             cursor: pointer;

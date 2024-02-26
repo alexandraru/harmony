@@ -39,10 +39,38 @@
 }
 header{
     .navigation{
+        .resp{
+            display: block;
+            color: $color;
+        }
     .navigation-box{
-        .navigation-box-items{
-    flex-wrap: wrap;
-   }}}}
+        .viewD{
+            display: none !important;
+        }
+        .viewM{
+            position: absolute;
+            top: 0px;
+            right: 0;
+            padding-top: 20px;
+            padding-left: 25px;
+            background-color: $background;
+            color: $color;
+            flex-direction: column;
+            width: 40%;
+            height: 100%;
+            border-radius: 20px;
+            align-items: flex-start;
+            .head-menu-close{
+                display: block;
+                position: absolute;
+                z-index: 1;
+                top: 12px;
+                right: 20px;
+                color: $color;
+            }
+        }
+        
+    }}}
 .author{
     .container{
         .author-photo{
@@ -107,15 +135,6 @@ header{
         }
 
     }
-  .navigation { 
-    flex-direction: column;
-   
-    .menu{
-       padding-right: 10px;
-       display: block;
-       white-space: nowrap;
-       padding-top: 10px;
-    }}
     .author{
        .container{
         .title-box { 
@@ -198,15 +217,15 @@ header{
     }
   header{  
     .navigation {
-       padding-left: 15px;
-       flex-direction: row;
-       .navigation-lang{
-        top: 50px;
-    }
-       .navigation-box-items{
-        flex-wrap: wrap;
+        padding: 20px 20px;
+       .navigation-box{
+        .viewM{
+            width: 70%;
+            left: 0;
+            right: 0;
+    
+        }
        }
-
     }}
 .author{
     .container{

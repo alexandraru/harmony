@@ -9,7 +9,7 @@ import './styles/App.scss';
 import { useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ChallengeLang from './pages/ChallengeLang';
-import Subscription from './components/Subscription';
+import SubscribeNot from './pages/SubscribeNot';
 
 function App() {
   const {error} = useSelector(state => state.info);
@@ -30,7 +30,7 @@ function App() {
         <Route path='course' element={<Home/>}/>
         <Route path='contacts' element={<Home/>}/>
         <Route path='challenge' element={<ChallengeLang/>}/>
-        <Route path='subscribe' element={<Subscription/>}/>
+        <Route path='subscribe' element={<SubscribeNot/>}/>
         <Route path='feedback' element={<Feedback/>}/>
         </Route>
       </Routes>
