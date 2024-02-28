@@ -37,7 +37,7 @@ function Subscription (){
        <>
       <div className='container'>
       <h2>{text.headerButton2}</h2>
-       <form id="sub-form" className='d-flex' onSubmit={handleSubmit(onSubmit)} action="https://formsubmit.co/el/mimafo" method="POST">
+       <form id="sub-form" className='d-flex' onSubmit={handleSubmit(onSubmit)}>
         <div className='sub-form-item d-flex'>
             <label htmlFor='name'>{text.subscribeName}:</label>
             <input  id='name' {...register('name', { required: true })}/>
